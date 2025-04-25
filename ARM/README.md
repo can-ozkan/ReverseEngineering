@@ -12,4 +12,5 @@ file hello \
 qemu-arm ./executable
 
 ## Installing qemu
-sudo apt install qemu
+sudo apt install qemu \
+sudo apt install qemu-user
