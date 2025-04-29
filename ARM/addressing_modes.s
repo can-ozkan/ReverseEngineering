@@ -9,6 +9,9 @@ _start:
 	// like dereferencing in pointers
 	
 	ldr r2, [r0, #4]
+
+ 	mov r7, #1
+	swi 0
 	
 .data
 list: 
