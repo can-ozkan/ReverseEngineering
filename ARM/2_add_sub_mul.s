@@ -16,3 +16,6 @@ _start:
 	mov r2, #2
 	
 	mul r1, r0, r2
+
+ 	mov r7, #1
+	swi 0
