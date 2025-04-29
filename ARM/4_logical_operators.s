@@ -8,4 +8,7 @@ _start:
 	orr r2, r0, #0x26 /* binary OR operation */
 	eor r3, r0, #0x26 /* binary XOR operation */
 	mvn r4, r0 /* binary NOT operation */
+
+ 	mov r7, #1
+	swi 0
 	
