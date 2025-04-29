@@ -10,5 +10,8 @@ _start:
 	// if r0 == r1 then the result is 0 Negative Flag is set
 	
 	cmp r0, r1
+
+ 	mov r7, #1
+	swi 0
 	
 	
