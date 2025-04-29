@@ -17,7 +17,9 @@ loop:
 	b loop
 	
 exit:	
-	
+	mov r7, #1
+	swi 0
+ 
 .data
 list:
 	.word 1,2,3,4,5,6,7,8,9,10
