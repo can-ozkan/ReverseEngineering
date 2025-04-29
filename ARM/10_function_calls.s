@@ -9,7 +9,8 @@ _start:
 	mov r2, r0
 	pop {r0, r1}
 	
-	
+	mov r7, #1
+	swi 0
 	
 add_nums:
 	add r0, r0, r1
