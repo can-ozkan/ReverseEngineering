@@ -20,4 +20,7 @@ _start:
 	
 	mov r0, #-40
 	ror r0, r0, #1 /* rotation right */ 
-	rorl r0, r0, #1 /* rotation left */ 
+	rol r0, r0, #1 /* rotation left */ 
+
+ 	mov r7, #1
+	swi 0
