@@ -16,5 +16,6 @@ _start:
 		mov r3, #2
 		
 	done:
-	
+		mov r7, #1
+		swi 0
 	
