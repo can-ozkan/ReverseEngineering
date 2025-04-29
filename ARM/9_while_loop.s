@@ -10,5 +10,6 @@ loop:
 	b loop
 	
 end:
-	
+	mov r7, #1
+	swi 0
 	
