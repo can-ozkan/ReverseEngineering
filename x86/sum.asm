@@ -1,3 +1,8 @@
+; compilation
+; nasm -f elf sum.asm -o sum.o
+; ld -m elf_i386 sum.o -o sum
+; ./sum
+
 section .data
 msg1 db "Enter the first number : ",0xa
 len1 equ $ - msg1
