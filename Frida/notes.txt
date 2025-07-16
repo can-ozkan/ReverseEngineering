@@ -1,0 +1,13 @@
+Attach Problem
+--------------
+On many Linux distros, ptrace is restricted by default to avoid debugging other users’ processes.
+
+Check your current setting:
+
+
+cat /proc/sys/kernel/yama/ptrace_scope
+If it's 1 or 2, Frida can’t attach unless the process is a child or you're root.
+
+You can temporarily allow attaching to any process by doing:
+
+sudo sysctl kernel.yama.ptrace_scope=0
